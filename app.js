@@ -25,8 +25,23 @@
 // console.log(calculateMultiple(a, b));
 // console.log(calculateSum(a, b));
 
-//latest vesion of nodejs
-const { TextEncoder, TextDecoder } = require("node:util");
-const util = require("node:util");
-//older version of nodejs
-const { TextEncoder, TextDecoder } = require("util");
+// //latest vesion of nodejs
+// const { TextEncoder, TextDecoder } = require("node:util");
+// const util = require("node:util");
+// //older version of nodejs
+// const { TextEncoder, TextDecoder } = require("util");
+
+//when we do this node.js take all the code from the file and wrap it into function and call that function
+// require("./xyz.js")
+
+
+//example IIFE function
+// (function (){
+//     //All the code of module will be inside immediately available function expression
+//     // console.log("hello world");
+// })()
+
+// const { calculateMultiple } = require('');
+
+console.log(__filename); // prints the absolute path of the current file
+console.log(__dirname); // prints the absolute path of the directory containing the current file

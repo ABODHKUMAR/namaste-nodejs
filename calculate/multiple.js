@@ -5,4 +5,8 @@ function calculateMultiple(a, b) {
   return a * b;
 }
 
+setTimeout(() =>{
+  console.log("This is calculateMultiple module");
+}, 10000);
+
 module.exports = {calculateMultiple};
